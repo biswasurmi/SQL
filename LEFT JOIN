@@ -1,0 +1,7 @@
+The LEFT JOIN returns all rows from the left table and the matched rows from the right table. If no match is found, NULL values are returned for the right table's columns.
+
+https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT e.unique_id, em.name
+FROM Employees as em
+LEFT JOIN EmployeeUNI as e ON e.id = em.id
